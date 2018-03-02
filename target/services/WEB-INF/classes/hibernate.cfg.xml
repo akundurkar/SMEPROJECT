@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">showad</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sme_development</property>
+        <property name="hibernate.connection.username">showad</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="in.adcast.model.AccessRights" />
+        <mapping class="in.adcast.model.ClientOrder" />
+        <mapping class="in.adcast.model.ServiceMasterdata" />
+        <mapping class="in.adcast.model.ApplicationUser" />
+        <mapping class="in.adcast.model.Client" />
+        <mapping class="in.adcast.model.Media" />
+        <mapping class="in.adcast.model.Role" />
+        <mapping class="in.adcast.model.StaffSchedule" />
+        <mapping class="in.adcast.model.ReferralMasterdata" />
+        <mapping class="in.adcast.model.Applicationproperties" />
+        <mapping class="in.adcast.model.FeedbackMasterdata" />
+        <mapping class="in.adcast.model.Applicationoauthsetting" />
+        <mapping class="in.adcast.model.Branch" />
+        <mapping class="in.adcast.model.OfferTemplate" />
+        <mapping class="in.adcast.model.CustomerHasOffer" />
+        <mapping class="in.adcast.model.ClientReview" />
+        <mapping class="in.adcast.model.OfferType" />
+        <mapping class="in.adcast.model.BranchSchedule" />
+        <mapping class="in.adcast.model.FilterCustomerForoffer" />
+        <mapping class="in.adcast.model.Offers" />
+        <mapping class="in.adcast.model.BusinessTypeMasterdata" />
+        <mapping class="in.adcast.model.ServiceOffered" />
+        <mapping class="in.adcast.model.SubOrder" />
+        <mapping class="in.adcast.model.Invoice" />
+        <mapping class="in.adcast.model.TaxMasterdata" />
+        <mapping class="in.adcast.model.ApplicationSession" />
+        <mapping class="in.adcast.model.ClosedDates" />
+        <mapping class="in.adcast.model.Oauthsession" />
+        <mapping class="in.adcast.model.OrderMasterdata" />
+        <mapping class="in.adcast.model.BusinessCategoryMasterdata" />
+        <mapping class="in.adcast.model.AccessRightsMasterData" />
+        <mapping class="in.adcast.model.Organisation" />
+        <mapping class="in.adcast.model.FeedbackSubdata" />
+        <mapping class="in.adcast.model.ClientOffer" />
+        <mapping class="in.adcast.model.Contact" />
+    </session-factory>
+</hibernate-configuration>

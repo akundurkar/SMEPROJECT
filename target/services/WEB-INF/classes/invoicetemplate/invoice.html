@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+   <link rel="stylesheet" href="font-awesome.min.css" />
+    <title>A simple, clean, and responsive HTML invoice template</title>
+   
+    <style>
+	h1 {
+    font-size: 60px;
+}
+	
+    .invoice-box{
+        max-width:800px;
+        margin:auto;
+        padding:30px;
+        border:1px solid #eee;
+        box-shadow:0 0 10px rgba(0, 0, 0, .15);
+        font-size:16px;
+        line-height:24px;
+        font-family:'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color:#555;
+    }
+   
+    .invoice-box table{
+        width:100%;
+        line-height:inherit;
+        text-align:left;
+    }
+   
+    .invoice-box table td{
+        padding:5px;
+        vertical-align:top;
+    }
+   
+    .invoice-box table tr td:nth-child(2){
+        text-align:right;
+    }
+   
+    .invoice-box table tr.top table td{
+        padding-bottom:20px;
+    }
+   
+    .invoice-box table tr.top table td.title{
+        font-size:45px;
+        line-height:45px;
+        color:#333;
+    }
+   
+    .invoice-box table tr.information table td{
+        padding-bottom:40px;
+    }
+   
+    .invoice-box table tr.heading td{
+        background:#eee;
+        border-bottom:1px solid #ddd;
+        font-weight:bold;
+    }
+   
+    .invoice-box table tr.details td{
+        padding-bottom:20px;
+    }
+   
+    .invoice-box table tr.item td{
+        border-bottom:1px solid #eee;
+    }
+   
+    .invoice-box table tr.item.last td{
+        border-bottom:none;
+    }
+   
+    .invoice-box table tr.total td:nth-child(2){
+        border-top:2px solid #eee;
+        font-weight:bold;
+    }
+   
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td{
+            width:100%;
+            display:block;
+            text-align:center;
+        }
+       
+        .invoice-box table tr.information table td{
+            width:100%;
+            display:block;
+            text-align:center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                IMAGEHERE 
+                            </td>
+                           
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+         <table>
+                        <tr>
+                            <td width="50%">
+                               <b> book my LED, Inc.</b><br/>
+                                Shop No 19 G Wing, K K Market,<br/>
+                                Pune Satara Road,Dhankawadi,<br/>
+                                 Pune,Maharashtra 411043<br/>
+								Phone : 098238 38393
+                            </td>
+                           
+                            <td width="50%">
+                               <h1><b>INVOICE RAHUL CREATION </b></h1>
+                            </td>
+                        </tr>
+                    </table>
+					<br/>
+					<br/>
+					<br/>
+					<table>
+					<tr>
+					<td width="50%">
+								   CLIENTADDRESS
+					</td>
+					
+						<td width="50%">
+                               <b>INVOICE NO :INVOICENOHERE</b><br/>
+                                <b>INVOICE DATE :<i class="fa fa-calendar"></i> BILLDATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><br/>
+								<br/>
+                                <h2>Total Due :&nbsp;<i class="fa fa-inr"></i>&nbsp;TOTALAMOUNT</h2>
+                            </td>
+					
+					</tr>
+					</table>
+					
+        <table cellpadding="0" cellspacing="0">
+            <tr class="heading">
+                <td width="25%">
+                    ITEM
+                </td>
+               
+                <td colspan="2" width="45%" style="text-align:center;">
+                    DESCRIPTION
+                </td >
+                <td colspan="2" width="15%">
+                    PRICE
+                </td>
+                <td width="15%">
+                    SUB TOTAL
+                </td>
+            </tr>
+			TABLEROWS
+			<tr>
+			<td>
+                  
+                </td>
+               
+                <td colspan="2" style="text-align:center;">
+                  
+                </td >
+                <td colspan="2">
+                   <b>Sub Total</b>
+                </td>
+                <td>
+                   <i class="fa fa-inr"></i><b>TOTALAMOUNT</b>
+                </td>
+			</tr>
+			
+			<tr>
+			<td>
+                  
+                </td>
+               
+                <td colspan="2" style="text-align:center;">
+                  
+                </td >
+                <td colspan="2">
+                   <b>Tax Rate</b>
+                </td>
+                <td>
+                  <b> TAX_RATE%</b>
+                </td>
+			</tr>
+			<tr>
+			<td>
+                  
+                </td>
+               
+                <td colspan="2" style="text-align:center;">
+                  
+                </td >
+                <td colspan="2">
+                   <b>Other</b>
+                </td>
+                <td>
+                 <b> OTHER_RATE</b>
+                </td>
+			</tr>
+			
+			
+			<tr>
+			<td>
+                  
+                </td>
+               
+                <td colspan="2" style="text-align:center;">
+                  
+                </td >
+                <td colspan="2">
+                   <b>Total</b>
+                </td>
+                <td>
+                  <i class="fa fa-inr"></i><b>TOTALAMOUNT</b>
+                </td>
+			</tr>
+
+			
+            </table>
+			<br/>
+			<br/>
+			<br/>
+			
+			<h2 style="text-align:right;">Total: <font color="green"><i class="fa fa-inr"></i>TOTALAMOUNT</font></h2>
+			
+			<p><font color="gray">**To avoid loss of booking please make payment within 2 days.</font></p>
+    </div>
+</body>
+</html>

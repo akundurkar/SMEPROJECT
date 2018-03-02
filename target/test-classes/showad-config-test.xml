@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:websocket="http://www.springframework.org/schema/websocket"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:task="http://www.springframework.org/schema/task"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+    					http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/websocket 
+        http://www.springframework.org/schema/websocket/spring-websocket.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/task 
+        http://www.springframework.org/schema/task/spring-task.xsd
+        http://www.springframework.org/schema/tx 
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+ 
+
+	<context:component-scan base-package="in.adcast" />	
+
+     
+    <import resource="datasource-test-config.xml" />    
+
+  <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <property name="persistenceUnitName" value="ShowAdTest" />
+    <property name="dataSource" ref="dataSourceTest" />
+    <property name="jpaVendorAdapter">
+      <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+	   <!-- <property name="databasePlatform" value="org.hibernate.dialect.Oracle10gDialect" 
+		/> -->
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
+        <property name="generateDdl" value="true" />
+        <property name="showSql" value="true" />
+      </bean>
+    </property>
+    <property name="packagesToScan" value="in.adcast.model" />
+    <property name="loadTimeWeaver">
+      <bean
+        class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+    </property>
+  </bean>
+
+
+	<!-- a simple transaction manager using our (single) EntityManagerFactory -->
+	<!-- hint: bean-id has to be 'transactionManager' as this is referenced by other Spring resources -->
+  
+  <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="entityManagerFactory" />
+  </bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager" mode="proxy"/>
+	
+      
+</beans>

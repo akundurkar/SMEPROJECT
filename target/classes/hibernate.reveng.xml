@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering 
+  SYSTEM "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+<!-- 
+<type-mapping>
+
+ <sql-type jdbc-type="DATE"  hibernate-type="calendar_date" />
+
+</type-mapping>
+  --> 
+ 
+  
+<schema-selection match-schema="sme_development"/>
+ 
+
+<!--  
+<table-filter match-schema="bml_development" match-name=".*"/>
+-->
+
+<!--  
+
+<table-filter match-name="application_session" /> 
+
+<table-filter match-name="application_user" />
+
+<table-filter match-name="applicationoauthsetting" />
+
+<table-filter match-name="applicationproperties" />
+<table-filter match-name="aspect_ratio" />
+<table-filter match-name="booking_status" />
+<table-filter match-name="campaign" />
+<table-filter match-name="campaign_order" />
+
+<table-filter match-name="campaign_report" />
+
+<table-filter match-name="command" />
+
+<table-filter match-name="discount" />
+
+<table-filter match-name="document" />
+<table-filter match-name="download_log" />
+<table-filter match-name="edit_playlist" />
+<table-filter match-name="heartbeat" />
+
+<table-filter match-name="invoice" />
+
+<table-filter match-name="media" />
+
+<table-filter match-name="oauthsession" />
+<table-filter match-name="organisation" />
+<table-filter match-name="organisation_director" />
+<table-filter match-name="playlist" />
+<table-filter match-name="playlist_download_status" />
+
+<table-filter match-name="product" />
+
+<table-filter match-name="rate" />
+
+<table-filter match-name="role" />
+<table-filter match-name="screen" />
+<table-filter match-name="screen_camera" />
+<table-filter match-name="screen_document" />
+<table-filter match-name="screen_group_master" />
+
+<table-filter match-name="screen_photos" />
+
+<table-filter match-name="user_has_role" />
+
+-->
+
+
+
+</hibernate-reverse-engineering>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+ 
+ <organisation id="1" organisation_name="Media Owner" adress1="adress1" adress2="adress2" city="pune" state="state" phone="123456" website="www.organisation.com"/>
+ <organisation id="2" organisation_name="Advertiser" adress1="adress1" adress2="adress2" city="pune" state="state" phone="123456" website="www.organisation.com"/>
+ <organisation id="3" organisation_name="Show Ad " adress1="adress1" adress2="adress2" city="pune" state="state" phone="123456" website="www.showad.com"/>
+ 
+ <user id="1" organisation_id="1" email_Id="anup@showad.com" first_name="Anup" password="i6tmi3wld/o9j6Iogn1Cog==" lastName="Mishra" user_status="1" individual="0" profile_completion="100"/>
+ <user id="2" organisation_id="2" email_Id="ad@showad.com" first_name="Anup" password="i6tmi3wld/o9j6Iogn1Cog==" lastName="Mishra" user_status="1" individual="0" profile_completion="100"/>
+ <user id="3" organisation_id="3" email_Id="showad.de" first_name="Anup" password="i6tmi3wld/o9j6Iogn1Cog==" lastName="Mishra" user_status="1" individual="0" profile_completion="100"/>
+
+
+ <role id="1" role="Admin" type="ShowAd"/>
+ <role id="2" role="Admin" type="MediaOwner"/>
+ <role id="3" role="Admin" type="Advertiser"/>
+ <role id="4" role="Employee" type="ShowAd"/>
+ <role id="5" role="Employee" type="MediaOwner"/>
+ <role id="6" role="Employee" type="Advertiser"/>
+
+ <user_has_role user_id="3" role_id="1" />
+ <user_has_role user_id="1" role_id="2" />
+ <user_has_role user_id="2" role_id="3" />
+
+	
+ <screen id="1"  
+ organisation_id="1"  
+ user_id="1"  
+ screen_name="Screen Test"  
+ macadress="3c:45:89:90:78"  
+ area="Bibvewadi"  
+ adress="Kondhwa Road"  
+ city="Pune" 
+ latitude="1264764448" 
+ longitude="1264764448" 
+ status="1" pixel_width="300" 
+ pixel_height="284" vertical_size="10" 
+ horizontal_size="12" 
+ price="120" class="A"  
+ media_type_id="1" 
+ peaktime_from="13" 
+ peaktime_to="15" 
+ peaktime_iteration="1" 
+ nonpeaktime_iteration="10" loop_seconds="300"
+ visibility_sides="2" 
+ signal_halt="20" 
+ aspect_ratio="4"  
+ install_date="2015-04-02" 
+ pmc_registration_number="657565"  
+ type_of_led="soem"  
+ type_configuration="0" 
+ intensity="0" 
+ controller_type="0" 
+ controller_company="0" 
+ recieving_card_number="0" 
+ operation_from="0" 
+ operation_till="0" 
+ slot="0" 
+ cool_down_period="0" 
+ cool_down_timel="0" 
+ />
+
+		
+</dataset>
+
+
